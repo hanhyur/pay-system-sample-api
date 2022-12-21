@@ -1,3 +1,4 @@
 rootProject.name = 'pay-system-sample-api'
 include 'pay-system-domain'
+include 'pay-system-interface'
 
