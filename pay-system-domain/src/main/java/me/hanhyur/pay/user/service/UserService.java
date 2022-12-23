@@ -70,8 +70,8 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    // Transfer Fail List
-    public List<Transaction> findAllTransferNotComplete(String userId) {
+    // Transfer Not Completed List
+    public List<Transaction> findAllTransferNotCompleted(String userId) {
         return transactionRepository.findAllByMyId(userId)
                 .stream()
                 .filter(transaction -> transaction.getTrxType().equals(Transaction.TrxType.TRANSFER))
