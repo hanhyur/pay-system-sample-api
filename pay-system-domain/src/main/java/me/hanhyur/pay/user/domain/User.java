@@ -15,7 +15,7 @@ import java.util.Set;
 public class User {
 
     public enum PaymentMethods {
-        BANK, CARD
+        BANK_ACCOUNT, CARD
     }
 
     @Id
