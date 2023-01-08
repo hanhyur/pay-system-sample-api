@@ -8,23 +8,24 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class PaymentRequest {
+public record PaymentRequest(String userId,
+                             String shopId,
+                             Long money,
+                             boolean usingPoint,
+                             Long usedPoint,
+                             LocalDateTime dateTime) {
 
-    private String userId;
-
-    private String shopId;
-
-    private Long money;
-
-    private boolean usingPoint;
-
-    private Long usedPoint;
-
-    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
-    private LocalDateTime dateTime;
+//    private String userId;
+//
+//    private String shopId;
+//
+//    private Long money;
+//
+//    private boolean usingPoint;
+//
+//    private Long usedPoint;
+//
+//    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
+//    private LocalDateTime dateTime;
 
 }

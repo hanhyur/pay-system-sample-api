@@ -1,6 +1,5 @@
 package me.hanhyur.pay.user.domain;
 
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +17,6 @@ public class User {
         BANK_ACCOUNT, CARD
     }
 
-    @Id
     private String userId;
 
     private String email;
